@@ -1,0 +1,288 @@
+/* Calculator grid */
+.calculator {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  /* border: 1px solid #ccc; */
+  border-radius: 20px;
+  width: 400px;
+  height: 770px;
+  background-color: #717171;
+  margin-top: 20px;
+}
+.calculator-keys{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* or do this grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-gap: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+#calculator-screen {
+  width: 90%;
+  height: 280px;
+  font-size: 3rem;
+  border: none;
+  background-color: #d3f0d2;
+  color: darkgreen;
+  text-align: right;
+  padding: 90px 20px 0 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+
+}
+
+.calculator button {
+  height: 80px;
+  width: 80px;
+  background-color: #82819e;
+  border-radius: 20px;
+  border-color: transparent;
+  font-size: 1rem;
+  color: #fff;
+  /* background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, .04)); */
+  /* box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05), inset 0 1px 0 0 rgba(255, 255, 255, .45), inset 0 -1px 0 0 rgba(255, 255, 255, .15), 0 1px 0 0 rgba(255, 255, 255, .15); */
+  /* text-shadow: 0 1px rgba(0, 0, 0, 0.5); */
+  box-shadow: 2px 2px #9c9c9c;
+}
+
+.calculator .digits:hover {
+  background-color: #BDC9FF;
+}
+
+.calculator .extra-button{
+  background-color: #83aae5;
+  /* height:20px;
+  border-radius: 7px;
+  margin-bottom: 5px; */
+}
+
+.calculator .operator {
+  background-color: #f58585;
+}
+
+.calculator .all-clear {
+  background-color: #f0595f;
+}
+
+.calculator .all-clear:hover {
+  background-color: #B54347;
+}
+
+.calculator .equal-sign {
+  background-color: #83aae5;
+  /* height: 100%;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  grid-column-start: 4;
+  grid-column-end:5;
+  grid-area: 2 / 4 / 6 / 5; /*! same as above*/
+}
+
+.calculator .equal-sign:hover {
+  background-color: #4e9ed4;
+}
+
+.calculator .zero{
+  width: 100%;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end:3;
+}
+
+
+
+
+/////
+<div class="calculator">
+  <input type="text" id="calculator-screen" value="0" disabled />
+  <div class="calculator-keys">
+    <button type="button" class="extra-button"></button>
+    <button type="button" class="extra-button"></button>
+    <button type="button" class="extra-button"></button>
+    <button type="button" class="extra-button"></button>
+
+    <button type="button" class="digits" value="7">7</button>
+    <button type="button" class="digits" value="8">8</button>
+    <button type="button" class="digits" value="9">9</button>
+    <button type="button" class="operator" value="+"></button>
+
+    <button type="button" class="digits" value="4">4</button>
+    <button type="button" class="digits" value="5">5</button>
+    <button type="button" class="digits" value="6">6</button>
+    <button type="button" class="operator" value="-"></button>
+
+    <button type="button" class="digits" value="1">1</button>
+    <button type="button" class="digits" value="2">2</button>
+    <button type="button" class="digits" value="3">3</button>
+    <button type="button" class="all-clear" value="">AC</button>
+    <!-- <button type="button" class="operator" value="*"></button> -->
+
+    <button type="button" class="digits decimal" value=".">.</button>
+    <button type="button" class="digits zero" value="0">0</button>
+    <button type="button" class="equal-sign" value="=">Enter</button>
+    <!-- <button type="button" class="operator" value="/"></button> -->
+
+
+  </div>
+</div>
+
+
+
+
+
+inside the 2nd column
+<!-- <img class="main-img" src="images/calculator.png" alt="calculator.png"> -->
+<!-- <div class="container">
+  <div class="row h-25 pt-5 justify-content-center">
+    <div class="receipt"></div>
+  </div>
+  <div class="row justify-content-center"> -->
+<div class="receipt"></div>
+<div class="calculator">
+  <input type="text" id="calculator-screen" value="0" disabled />
+  <div class="calculator-keys">
+    <button type="button" class="extra-button"></button>
+    <button type="button" class="extra-button"></button>
+    <button type="button" class="extra-button"></button>
+    <button type="button" class="extra-button"></button>
+
+    <button type="button" class="digits" value="7">7</button>
+    <button type="button" class="digits" value="8">8</button>
+    <button type="button" class="digits" value="9">9</button>
+    <button type="button" class="operator" value="+"></button>
+
+    <button type="button" class="digits" value="4">4</button>
+    <button type="button" class="digits" value="5">5</button>
+    <button type="button" class="digits" value="6">6</button>
+    <button type="button" class="operator" value="-"></button>
+
+    <button type="button" class="digits" value="1">1</button>
+    <button type="button" class="digits" value="2">2</button>
+    <button type="button" class="digits" value="3">3</button>
+    <button type="button" class="all-clear" value="">AC</button>
+    <!-- <button type="button" class="operator" value="*"></button> -->
+
+    <button type="button" class="digits decimal" value=".">.</button>
+    <button type="button" class="digits zero" value="0">0</button>
+    <button type="button" class="equal-sign" value="=">Enter</button>
+    <!-- <button type="button" class="operator" value="/"></button> -->
+  </div>
+</div>
+
+
+
+//////
+/* Calculator grid */
+.calculator {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  /* border: 1px solid #ccc; */
+  border-radius: 20px;
+  width: 400px;
+  height: 500px;
+  background-color: #717171;
+  padding-top: 100px;
+
+}
+.calculator-keys{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* or do this grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-gap: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+#calculator-screen {
+  width: 90%;
+  height: 15%;
+  font-size: 3rem;
+  border: none;
+  background-color: #d3f0d2;
+  color: darkgreen;
+  text-align: right;
+  padding: 0 20px 0 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+
+}
+
+.calculator button {
+  height: 50px;
+  width: 80px;
+  background-color: #82819e;
+  border-radius: 20px;
+  border-color: transparent;
+  font-size: 1rem;
+  color: #fff;
+  /* background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0, 0, 0, .04)); */
+  /* box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .05), inset 0 1px 0 0 rgba(255, 255, 255, .45), inset 0 -1px 0 0 rgba(255, 255, 255, .15), 0 1px 0 0 rgba(255, 255, 255, .15); */
+  /* text-shadow: 0 1px rgba(0, 0, 0, 0.5); */
+  box-shadow: 2px 2px #9c9c9c;
+}
+
+.calculator .digits:hover {
+  background-color: #BDC9FF;
+}
+
+.calculator .extra-button{
+  background-color: #83aae5;
+  /* height:20px;
+  border-radius: 7px;
+  margin-bottom: 5px; */
+}
+
+.calculator .operator {
+  background-color: #f58585;
+}
+
+.calculator .all-clear {
+  background-color: #f0595f;
+}
+
+.calculator .all-clear:hover {
+  background-color: #B54347;
+}
+
+.calculator .equal-sign {
+  background-color: #83aae5;
+  /* height: 100%;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  grid-column-start: 4;
+  grid-column-end:5;
+  grid-area: 2 / 4 / 6 / 5; /*! same as above*/
+}
+
+.calculator .equal-sign:hover {
+  background-color: #4e9ed4;
+}
+
+.calculator .zero{
+  width: 100%;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end:3;
+}
+
+
+.btn-success, .btn-success:hover, .btn-success:active, .btn-success:visited {
+  background-color: #9EC429 !important;
+  border-color: #9EC429 !important;
+}
+
+.btn-info, .btn-info:hover, .btn-info:active, .btn-info:visited {
+  background-color: #8B92DB !important;
+  border-color: #8B92DB !important;
+}

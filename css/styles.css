@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'Calculator';
+  src: url("../dafont/Calculator.ttf");
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+/* Nagivation Bar */
+.navbar {
+  padding: 1rem 2rem;
+}
+
+#nav-logo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+/*------------------ Title Section----------------*/
+.main-title {
+  padding: 1rem 5rem;
+  text-align: center;
+}
+
+.big-heading {
+  font-size: 5rem;
+  line-height: 1.5;
+  /* white-space: nowrap; */
+}
+
+.vertical-center {
+  min-height: 100%;
+  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
+
+.offwhite-bg{
+  background-color: #FEF9EF;
+}
+
+.title-section .button {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 4px;
+  background-color: #ccc;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.title-section .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.title-section .button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.title-section .button:hover span {
+  padding-right: 25px;
+}
+
+.title-section .button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* ----------------Bill Section---------------- */
+.orangetint-bg{
+  background-color: #FF865E;
+}
+
+.bill-question{
+  text-align: center;
+  padding: 5%;
+}
+
+.bill-question h1, .service-question h1{
+  font-size: 5rem;
+  color: white;
+}
+.form-label{
+  color: gray;
+}
+
+/*-------------- Service Question------------ */
+.bluetint-bg{
+  background-color:#A2D2FF;
+  text-align: center;
+}
+#service .container{
+}
+.btn-success, .btn-success:hover, .btn-success:active, .btn-success:visited {
+  background-color: #9EC429 !important;
+  border-color: #9EC429 !important;
+}
+
+.btn-info, .btn-info:hover, .btn-info:active, .btn-info:visited {
+  background-color: #8B92DB !important;
+  border-color: #8B92DB !important;
+}
+
+.survey-btn{
+  margin: 2.5rem 0;
+}
+.text-secondary{
+  font-size: 12px;
+}
+
+/* -------------------Receipt seciton----------------- */
+/* .receipt p {
+  text-align: left;
+}
+
+.receipt{
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  box-shadow: 2px 0 2px pink;
+} */
+
+.yellowtint-bg{
+  background-color: #FFB740;
+  text-align: center;
+}
+.receipt-paper{
+  height: 600px;
+  width: 500px;
+  background-color: white;
+}
