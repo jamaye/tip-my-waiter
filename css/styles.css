@@ -6,11 +6,16 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;
+  height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
+}
+section{
+  height:100vh;
+  width:100vw;
 }
 /* Nagivation Bar */
 .navbar {
@@ -21,7 +26,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
-
 /*------------------ Title Section----------------*/
 .main-title {
   padding: 1rem 5rem;
@@ -36,9 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .vertical-center {
   min-height: 100%;
-  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh;
-  /* These two lines are counted as one :-)       */
   display: flex;
   align-items: center;
 }
@@ -47,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FEF9EF;
 }
 
-.title-section .button {
+.next-btn{
   font-family: 'Montserrat', sans-serif;
   border-radius: 4px;
   background-color: #ccc;
@@ -62,14 +64,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 5px;
 }
 
-.title-section .button span {
+.next-btn span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.title-section .button span:after {
+.next-btn span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -78,11 +80,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
 }
 
-.title-section .button:hover span {
+.next-btn:hover span {
   padding-right: 25px;
 }
 
-.title-section .button:hover span:after {
+.next-btn:hover span:after {
   opacity: 1;
   right: 0;
 }
@@ -97,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5%;
 }
 
-.bill-question h1, .service-question h1{
+.bill-question h1{
   font-size: 5rem;
   color: white;
 }
@@ -121,14 +123,22 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #8B92DB !important;
   border-color: #8B92DB !important;
 }
-
+.service-question h1{
+  font-size: 5rem;
+}
 .survey-btn{
   margin: 2.5rem 0;
 }
 .text-secondary{
   font-size: 12px;
 }
+.rate-box{
+}
 
+.service-question .btn{
+  bottom:0;
+
+}
 /* -------------------Receipt seciton----------------- */
 /* .receipt p {
   text-align: left;

@@ -41,81 +41,77 @@
 
   <!-- Title-->
   <section class="offwhite-bg">
-    <div class="container">
-      <div class="row vertical-center main-title">
-        <div class="title-section col">
-          <h1 class="big-heading">TIP MY WAITER</h1>
-          <a class="button" href="#bill"><span>Begin </span></a>
-        </div>
+    <div class="container vertical-center justify-content-center ">
+      <div class="row main-title justify-content-center ">
+        <h1 class="big-heading">TIP MY WAITER</h1>
+        <a class="next-btn" href="#bill"><span>Begin </span></a>
       </div>
     </div>
   </section>
+  <!-- <a class="next-btn" href="#service"><span>Next </span></a> -->
 
   <!-- Bill Section -->
   <section class="orangetint-bg" id="bill">
-    <div class="container vertical-center">
+    <div class="container vertical-center justify-content-center ">
       <div class="row bill-question justify-content-center">
         <h1> How much was the bill?</h1>
-        <div class="form-outline col-md-4">
+        <div class="form-outline">
           <input type="number" id="typeNumber" class="form-control" />
-          <label class="form-label" for="typeNumber"><em>Enter amount</em></label>
+          <label class="form-label" for="typeNumber">Enter amount</label>
         </div>
+        <a class="next-btn" href="#service"><span>Next </span></a>
       </div>
     </div>
   </section>
 
   <!-- Service section -->
   <section class="bluetint-bg" id="service">
-    <div class="container vertical-center justify-content-center">
-      <div class="row service-question ">
-        <h1> Rate your overall experience</h1>
-        <div class="col-lg-4">
-        </div>
-        <div class="col-lg-4">
-          <button type="button" class="btn btn-primary btn-small survey-btn"> Answer Quick Survey</button>
-        </div>
-        <div class="col-lg-4">
-          <p class="text-secondary"><em>... if you wish to skip thru the questions, just select a rate: </em></p>
+    <div class="container service-question vertical-center">
+      <div class="row">
+        <h1>Rate Your Experience</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 rate-box">
+          <i class="fa-regular fa-face-meh-blank fa-4x"></i><br>
+          <p class="rate-descrip"><em>"Service was ... ok?"</em></p>
           <button type="button" class="btn btn-secondary btn-ten" value="0.1">10%</button>
+        </div>
+        <div class="col-lg-3 rate-box">
+          <i class="fa-regular fa-face-smile fa-4x"></i><br>
+          <p class="rate-descrip"><em>"Service was good! Nothing special, but good!"</em></p>
           <button type="button" class="btn btn-warning text-light btn-fifteen" value="0.15">15%</button>
+        </div>
+        <div class="col-lg-3 rate-box">
+          <i class="fa-regular fa-face-laugh fa-4x"></i><br>
+          <p class="rate-descrip"><em>"Service was great!"</em></p>
           <button type="button" class="btn btn-success btn-twenty" value="0.2">20%</button>
+        </div>
+        <div class="col-lg-3 rate-box">
+          <i class="fa-regular fa-face-grin-hearts fa-4x"></i><br>
+          <p class="rate-descrip"><em>"Service was excellent! I'm in love!"</em></p>
           <button type="button" class="btn btn-info text-light btn-twenty" value="0.25">25%</button>
         </div>
       </div>
-
     </div>
   </section>
-
-  <!-- Survey section -->
-  <section class="bluetint-bg" id="survey">
-    <div class="container vertical-center justify-content-center">
-      <div class="row service-question ">
-        <div class="col">
-          <h1> Insert survey questions here !</h1>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
 
   <!-- Receipt section -->
-<section class="yellowtint-bg" id="receipt">
-  <div class="container vertical-center justify-content-center">
-    <div class="row">
-      <div class="col">
-        <h1>Your Receipt</h1>
-      </div>
-      <div class="col">
-        <div class="receipt-paper">
+  <section class="yellowtint-bg" id="receipt">
+    <div class="container vertical-center justify-content-center">
+      <div class="row">
+        <div class="col">
+          <h1>Your Receipt</h1>
+        </div>
+        <div class="col">
+          <div class="receipt-paper">
+          </div>
+
         </div>
 
       </div>
 
     </div>
-
-  </div>
-</section>
+  </section>
 
   <script src="index.js"></script>
 </body>
