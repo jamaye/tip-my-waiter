@@ -13,11 +13,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
-section{
-  height:100vh;
-  width:100vw;
-}
-/* Nagivation Bar */
+/* ------------------Nagivation Bar------------------ */
 .navbar {
   padding: 1rem 2rem;
 }
@@ -27,29 +23,20 @@ section{
   font-weight: bold;
 }
 /*------------------ Title Section----------------*/
-.main-title {
-  padding: 1rem 5rem;
-  text-align: center;
+.background-offwhite{              /* Background Color*/
+  background-color: #FEF9EF;
 }
 
 .big-heading {
   font-size: 5rem;
   line-height: 1.5;
-  /* white-space: nowrap; */
 }
 
-.vertical-center {
-  min-height: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+.main-title {
+  padding: 1rem 5rem;
+  text-align: center;
 }
-
-.offwhite-bg{
-  background-color: #FEF9EF;
-}
-
-.next-btn{
+.begin-btn, .next-btn{
   font-family: 'Montserrat', sans-serif;
   border-radius: 4px;
   background-color: #ccc;
@@ -64,14 +51,14 @@ section{
   margin: 5px;
 }
 
-.next-btn span {
+.begin-btn span, .next-btn span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.next-btn span:after {
+.begin-btn span:after, .next-btn span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -80,39 +67,40 @@ section{
   transition: 0.5s;
 }
 
-.next-btn:hover span {
+.begin-btn:hover span, .next-btn:hover span {
   padding-right: 25px;
 }
 
-.next-btn:hover span:after {
+.begin-btn:hover span:after, .next-btn:hover span:after {
   opacity: 1;
   right: 0;
 }
 
-/* ----------------Bill Section---------------- */
-.orangetint-bg{
-  background-color: #FF865E;
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
-
+/* ----------------Bill Section---------------- */
+.background-blue{              /* Background Color*/
+  background-color: #495664;
+}
 .bill-question{
   text-align: center;
   padding: 5%;
 }
-
 .bill-question h1{
   font-size: 5rem;
   color: white;
 }
 .form-label{
-  color: gray;
+  color: white;
 }
-
 /*-------------- Service Question------------ */
-.bluetint-bg{
-  background-color:#A2D2FF;
+.background-mintgreen{            /* Background Color*/
+  background-color:#F6F7D3;
   text-align: center;
-}
-#service .container{
 }
 .btn-success, .btn-success:hover, .btn-success:active, .btn-success:visited {
   background-color: #9EC429 !important;
@@ -123,6 +111,12 @@ section{
   background-color: #8B92DB !important;
   border-color: #8B92DB !important;
 }
+.rate-box{
+  margin-top: 2rem;
+}
+.rate-box:hover{
+  color: gray;
+}
 .service-question h1{
   font-size: 5rem;
 }
@@ -132,29 +126,11 @@ section{
 .text-secondary{
   font-size: 12px;
 }
-.rate-box{
-}
 
 .service-question .btn{
   bottom:0;
-
 }
 /* -------------------Receipt seciton----------------- */
-/* .receipt p {
-  text-align: left;
-}
-
-.receipt{
-  height: 200px;
-  width: 200px;
-  background-color: white;
-  box-shadow: 2px 0 2px pink;
-} */
-
-.yellowtint-bg{
-  background-color: #FFB740;
-  text-align: center;
-}
 .receipt-paper{
   height: 600px;
   width: 500px;
