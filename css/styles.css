@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FEF9EF;
 }
 
-.big-heading {
+.big-heading-black {
   font-size: 5rem;
   line-height: 1.5;
 }
@@ -90,9 +90,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   padding: 5%;
 }
-.bill-question h1{
+
+.big-heading-white{
   font-size: 5rem;
-  color: white;
+  line-height: 1.5;
+  color: #fff;
 }
 .form-label{
   color: white;
@@ -117,9 +119,6 @@ h1, h2, h3, h4, h5, h6 {
 .rate-box:hover{
   color: gray;
 }
-.service-question h1{
-  font-size: 5rem;
-}
 .survey-btn{
   margin: 2.5rem 0;
 }
@@ -131,8 +130,11 @@ h1, h2, h3, h4, h5, h6 {
   bottom:0;
 }
 /* -------------------Receipt seciton----------------- */
+#receipt{
+  text-align: center;
+}
 .receipt-paper{
   height: 600px;
-  width: 500px;
+  width: 350px;
   background-color: white;
 }
