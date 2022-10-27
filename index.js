@@ -65,3 +65,8 @@ function addReceiptValue(inputValid, i){
     newBillText.innerHTML = billWithTip;
   }
 }
+
+
+function helpMessage(){
+alert("[HELP]: Select the \'Begin\' button to start and it will guide you through the whole process. At the end, it will give you your receipt which will calculate your total bill based on your answers.");
+}

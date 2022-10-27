@@ -13,6 +13,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
+img{
+  width:300px !important;
+  height: auto;
+}
 /* ------------------Nagivation Bar------------------ */
 .navbar {
   padding: 1rem 2rem;
@@ -22,14 +26,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
 /*------------------ Title Section----------------*/
+
 .background-offwhite{              /* Background Color*/
   background-color: #FEF9EF;
 }
 
 .big-heading-black {
-  font-size: 5rem;
-  line-height: 1.5;
+  font-size: 8rem;
+  line-height: 1;
 }
 
 .main-title {
@@ -43,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   padding: 10px;
   width: 100px;
   transition: all 0.5s;
@@ -92,8 +103,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .big-heading-white{
-  font-size: 5rem;
-  line-height: 1.5;
+  font-size: 8rem;
+  line-height: 1;
   color: #fff;
 }
 .form-label{
@@ -124,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2.5rem 0;
 }
 .text-secondary{
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .service-question .btn{
@@ -136,12 +147,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 300px;
   padding: 100px 20px 0 20px;
   background-color: white;
-  margin: 10% 0;
+  margin: 5% 0;
   box-shadow: 5px 5px 5px 5px gray;
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 20px auto auto;
+  grid-template-columns: 40px auto auto;
 
 
 }

@@ -31,7 +31,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Help</a>
+            <a class="nav-link" href="#" onclick="helpMessage()">Help</a>
           </li>
           </li>
         </ul>
@@ -43,6 +43,7 @@
   <section class="background-offwhite">
     <div class="container vertical-center justify-content-center ">
       <div class="row main-title justify-content-center">
+        <img src="images/logo.png" alt="tmw-logo.png">
         <h1 class="big-heading-black">TIP MY WAITER</h1>
         <a class="begin-btn" href="#bill"><span>Begin </span></a>
       </div>
@@ -71,22 +72,22 @@
         <div class="col-sm-6 col-lg-3 rate-box">
           <i class="fa-regular fa-face-meh-blank fa-4x rate-icon"></i><br>
           <p class="rate-descrip"><em>"Service was ... ok?"</em></p>
-          <a href="#receipt" id="rate-btn"><button type="button" class="btn btn-secondary btn-ten" value="0.1">10%</button></a>
+          <a href="#receipt" id="rate-btn"><button type="button" class="btn btn-secondary btn-lg btn-ten" value="0.1">10%</button></a>
         </div>
         <div class="col-sm-6 col-lg-3 rate-box">
           <i class="fa-regular fa-face-smile fa-4x rate-icon"></i><br>
           <p class="rate-descrip"><em>"Service was good!"</em></p>
-          <a href="#receipt" id="rate-btn"><button type="button" class="btn btn-warning text-light btn-fifteen" value="0.15">15%</button></a>
+          <a href="#receipt" id="rate-btn"><button type="button" class="btn btn-warning btn-lg text-light btn-fifteen" value="0.15">15%</button></a>
         </div>
         <div class="col-sm-6 col-lg-3 rate-box">
           <i class="fa-regular fa-face-laugh fa-4x rate-icon"></i><br>
           <p class="rate-descrip"><em>"Service was great!"</em></p>
-          <a href="#receipt" id="rate-btn"><button type="button" class="btn btn-success btn-twenty" value="0.2">20%</button></a>
+          <a href="#receipt" id="rate-btn"><button type="button" class="btn btn-success btn-lg btn-twenty" value="0.2">20%</button></a>
         </div>
         <div class="col-sm-6 col-lg-3 rate-box">
           <i class="fa-regular fa-face-grin-hearts fa-4x rate-icon"></i><br>
           <p class="rate-descrip"><em>"Service was excellent! I'm in love!"</em></p>
-          <a href="#receipt" id="rate-btn"><button type="button" class="btn btn-info text-light btn-twentyfive" value="0.25">25%</button></a>
+          <a href="#receipt" id="rate-btn"><button type="button" class="btn btn-info btn-lg text-light btn-twentyfive" value="0.25">25%</button></a>
         </div>
       </div>
     </div>
@@ -94,8 +95,8 @@
 
   <!-- Receipt Section -->
   <section class="background-offwhite" id="receipt">
-    <div class="container">
-      <div class="row vertical-center" align="center">
+    <div class="container vertical-center">
+      <div class="row " align="center">
       <div class="col-lg-6">
         <h1 class="big-heading-black">Your Receipt</h1>
         <button type="button" class="btn btn-outline-dark btn-roundup">Round-up Bill</button>
