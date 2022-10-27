@@ -42,7 +42,7 @@
   <!-- Title Page-->
   <section class="background-offwhite">
     <div class="container vertical-center justify-content-center ">
-      <div class="row main-title justify-content-center ">
+      <div class="row main-title justify-content-center">
         <h1 class="big-heading-black">TIP MY WAITER</h1>
         <a class="begin-btn" href="#bill"><span>Begin </span></a>
       </div>
@@ -63,27 +63,27 @@
     </div>
   </section>
 
-  <!-- Service section -->
+  <!-- Service Section -->
   <section class="background-mintgreen" id="service">
     <div class="container service-question vertical-center">
       <div class="row">
         <h1 class="big-heading-black">Rate Your Experience</h1>
-        <div class="col-lg-3 rate-box">
+        <div class="col-sm-6 col-lg-3 rate-box">
           <i class="fa-regular fa-face-meh-blank fa-4x rate-icon"></i><br>
           <p class="rate-descrip"><em>"Service was ... ok?"</em></p>
           <a href="#receipt" id="rate-btn"><button type="button" class="btn btn-secondary btn-ten" value="0.1">10%</button></a>
         </div>
-        <div class="col-lg-3 rate-box">
+        <div class="col-sm-6 col-lg-3 rate-box">
           <i class="fa-regular fa-face-smile fa-4x rate-icon"></i><br>
-          <p class="rate-descrip"><em>"Service was good! Nothing special, but good!"</em></p>
+          <p class="rate-descrip"><em>"Service was good!"</em></p>
           <a href="#receipt" id="rate-btn"><button type="button" class="btn btn-warning text-light btn-fifteen" value="0.15">15%</button></a>
         </div>
-        <div class="col-lg-3 rate-box">
+        <div class="col-sm-6 col-lg-3 rate-box">
           <i class="fa-regular fa-face-laugh fa-4x rate-icon"></i><br>
           <p class="rate-descrip"><em>"Service was great!"</em></p>
           <a href="#receipt" id="rate-btn"><button type="button" class="btn btn-success btn-twenty" value="0.2">20%</button></a>
         </div>
-        <div class="col-lg-3 rate-box">
+        <div class="col-sm-6 col-lg-3 rate-box">
           <i class="fa-regular fa-face-grin-hearts fa-4x rate-icon"></i><br>
           <p class="rate-descrip"><em>"Service was excellent! I'm in love!"</em></p>
           <a href="#receipt" id="rate-btn"><button type="button" class="btn btn-info text-light btn-twentyfive" value="0.25">25%</button></a>
@@ -92,25 +92,48 @@
     </div>
   </section>
 
-  <!-- Receipt section -->
+  <!-- Receipt Section -->
   <section class="background-offwhite" id="receipt">
     <div class="container">
-      <div class="row vertical-center">
+      <div class="row vertical-center" align="center">
       <div class="col-lg-6">
         <h1 class="big-heading-black">Your Receipt</h1>
         <button type="button" class="btn btn-outline-dark btn-roundup">Round-up Bill</button>
       </div>
       <div class="col-lg-6">
         <div class="receipt-paper">
-          <p id="bill-amount">bill amount</p>
-          <p id="tip">tip amount</p>
-          <p id="new-bill-amount">new bill amount</p>
+          <h3>Masarap Restaurant</h3>
+          <p>317 Plaza Ipsum <br>
+          Telephone: (888)999-0000</p>
+          <p>***********************************</p>
+          <p align="left">Delicious Appetizer<br>
+             Hearty Entree<br>
+             Sweet Dessert<br>
+             Quenching Beverage<br>
+          </p>
+          <div class="grid-container">
+            <div class="grid-item"></div>
+            <div class="grid-item">Bill:</div>
+            <div class="grid-item"><p id="bill-amount">bill-amount</p></div>
+            <div class="grid-item"></div>
+            <div class="grid-item">Tip:</div>
+            <div class="grid-item"><p id="tip">tip-amount</p></div>
+            <div class="grid-item"></div>
+            <div class="grid-item">Total Bill:</div>
+            <div class="grid-item"><p id="new-bill-amount">new-bill-amount</p></div>
+          </div>
         </div>
       </div>
-
     </div>
     </div>
   </section>
+
+  <footer class="text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: #eee;">
+      © 2022 Copyright:
+      <a class="text-dark" href="https://www.github.com/jamaye"> Janilou Sy</a>
+    </div>
+  </footer>
   <!-- <div class="receipt-paper">
     <p id="tip">tip amount</p>
   </div> -->

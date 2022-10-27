@@ -100,6 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 /*-------------- Service Question------------ */
+
 .background-mintgreen{            /* Background Color*/
   background-color:#F6F7D3;
   text-align: center;
@@ -117,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 2rem;
 }
 .rate-box:hover{
-  color: gray;
+  color: #dbad67;
 }
 .survey-btn{
   margin: 2.5rem 0;
@@ -130,11 +131,22 @@ h1, h2, h3, h4, h5, h6 {
   bottom:0;
 }
 /* -------------------Receipt seciton----------------- */
-#receipt{
-  text-align: center;
-}
 .receipt-paper{
   height: 600px;
-  width: 350px;
+  width: 300px;
+  padding: 100px 20px 0 20px;
   background-color: white;
+  margin: 10% 0;
+  box-shadow: 5px 5px 5px 5px gray;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: 20px auto auto;
+
+
+}
+.grid-item {
+  text-align: left;
+  font-weight: bold;
+}
+/* --------------------Footer Section-------------------*/
